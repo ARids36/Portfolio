@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Edited by Adam Ridsdale - 2025
+-->
+<html>
+	<head>
+		<title>Adam Ridsdale - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<style>html {scroll-behavior: smooth;}</style>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1>Adam Ridsdale</h1>
+							<p>A Portfolio</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="{{ url_for('home') }}">Home</a></li>
+								<li><a href="{{ url_for('about_me') }}">About</a></li>
+								<li><a href="#features">Projects</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Intro -->
+				<section id="intro" class="wrapper style1">
+
+					<div class="title">About me</div>
+					<div class="container">
+						<p class="style1">An aspiring software developer based in Yorkshire</p>
+						<p class="style3">Whilst I didn't study a computer science related degree,
+							I was introduced to the power of coding at university and have continued
+							developing my skills ever since. Specialising in <strong>Python</strong>,
+							I have also developed skills using <strong>C++</strong> and <strong>MATLAB</strong>,
+							along with <strong>HTML</strong> and <strong>CSS</strong> for web development.</p>
+						<ul class="actions">
+							<li><a href="{{ url_for('about_me') }}" class="button style3 large">Learn More</a></li>
+						</ul>
+					</div>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+
+					<div class="title">Projects</div>
+					<div class="container">
+
+						<!-- Image -->
+							<a href="#" class="image featured">
+								<img src="images/pic01.jpg" alt="" />
+							</a>
+
+						<!-- Features -->
+							<section id="features">
+
+								<header class="style1">
+									<h2>A selection of projects demonstrating my coding abilities</h2>
+									<p>You can also find my repositories on <a href="https://github.com/ARids36">GitHub</a></p>
+								</header>
+								<div class="feature-list">
+									<div class="row">
+										{% for project in projects %}
+										<div class="col-6 col-12-medium">
+											<section>
+
+												<a href="{{ url_for('open_project', project_id=project.ID) }}">
+													<h3 class="{{ project.Icon }}">{{ project.Title }}</h3>
+												</a>
+												<p>{{ project.Info }}</p>
+
+											</section>
+										</div>
+										{% endfor %}
+									</div>
+								</div>
+
+							</section>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+
+					<div class="title">Contact</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Want to know more?</h2>
+							<p>
+								adamridsdale36@gmail.com
+							</p>
+						</header>
+						<div id="copyright">
+							<ul>
+								<li>&copy; Adam Ridsdale - 2025.</li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Edited by Adam Ridsdale - 2025
+-->
+<html>
+	<head>
+		<title>Title</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<style>html {scroll-behavior: smooth;}</style>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1>Adam Ridsdale</h1>
+							<p>A Portfolio</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="{{ url_for('home') }}">Home</a></li>
+								<li><a href="{{ url_for('about_me') }}">About</a></li>
+								<li><a href="{{ url_for('home', _anchor='main') }}">Projects</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+
+					<div class="title">{{ project.Heading }}</div>
+					<div class="container">
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<div id="sidebar">
+										<section class="box">
+
+											<header>
+												<h2>Skills Featured</h2>
+											</header>
+											<p>{{ project.Stats }}</p>
+											<a href="{{ project.Link }}" class="button style1">See it on GitHub</a>
+
+										</section>
+									</div>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<div id="content">
+										<article class="box post">
+											<header class="style1">
+												<h2>{{ project.Title }}</h2>
+												<p>{{ project.Subtitle }}</p>
+											</header>
+											<p>{{ project.Body_1 }}</p>
+											<img src="{{ project.Image_1 }}" alt="{{ project.Heading }}" class="image featured"/>
+											<p>{{ project.Body_2 }}</p>
+											<img src="{{ project.Image_2 }}" alt="{{ project.Heading }}" class="image featured"/>
+										</article>
+									</div>
+
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+
+					<div class="title">Contact</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Want to know more?</h2>
+							<p>
+								adamridsdale36@gmail.com
+							</p>
+						</header>
+
+						<div id="copyright">
+							<ul>
+								<li>&copy; Adam Ridsdale - 2025.</li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

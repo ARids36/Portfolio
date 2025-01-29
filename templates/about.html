@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Edited by Adam Ridsdale - 2025
+-->
+<html>
+	<head>
+		<title>Adam Ridsdale - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<style>html {scroll-behavior: smooth;}</style>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1>Adam Ridsdale</h1>
+							<p>A Portfolio</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="{{ url_for('home') }}">Home</a></li>
+								<li><a href="{{ url_for('about_me') }}">About</a></li>
+								<li><a href="{{ url_for('home', _anchor='main') }}">Projects</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+
+					<div class="title">About me</div>
+					<div class="container">
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<div id="content">
+										<article class="box post">
+											<header class="style1">
+												<h2>An aspiring software developer based in Yorkshire</h2>
+											</header>
+											<a href="#" class="image featured">
+												<img src="images/pic01.jpg" alt="" />
+											</a>
+											<p>I was introduced to coding during University, whilst studying
+												Environmental Geoscience. This started as using MATLAB and eventually
+												Python for data analysis and building simple models. I was instantly
+												drawn to the practice and completed my final dissertations using
+												both MATLAB and python to model flood risk and analyse seismic
+												waveforms.</p>
+											<p>Since leaving University I continued developing my skills, undertaking
+												online courses to sharpen my Python abilities, as well as in C++ to get
+												experience in another language.</p>
+											<p>I've worked as a Remediation Engineer and Project Manager for over 5
+												years now, and have managed to use some of these skills to improve my
+												workflow - from building simple models to calculate flow characteristics
+												to web scraping to extract monitoring data from cloud based services.</p>
+											<p>Outside of working life I'm a keen cook, and if not creating in
+												the kitchen I'm currently creating and recording new music for our
+												<a href="https://open.spotify.com/artist/1hcwAC768kApE7zSFySwgV?
+												si=4tNTewU8TV6Nychg6M9gRQ">bands second album</a></p>
+										</article>
+
+									</div>
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<div id="sidebar">
+										<section class="box">
+
+											<a href="https://github.com/ARids36" class="button style1">GitHub</a>
+
+										</section>
+										<section class="box">
+
+											<header>
+												<h2>Languages</h2>
+											</header>
+											<ul class="style2">
+												<li>
+													<article class="box post-excerpt">
+														<img src="/static/images/python_logo.png"
+															 alt="Python logo" class="image left"/>
+														<h3>Python</h3>
+														<p>My primary langauge. Introduced at University and developed
+														in my own time since graduating</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<img src="/static/images/Cpp_logo.png" alt="C++ Logo"
+															 class="image left" />
+														<h3>C++</h3>
+														<p>Taught myself the basics to devlop my coding abilities</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<img src="/static/images/MATLAB_logo.png" alt="MATLAB logo"
+															 class="image left" />
+														<h3>MATLAB</h3>
+														<p>Learnt alongside Python whilst at University, however haven't had access since graduating</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<img src="/static/images/HTML_logo.png" alt="HTML 5 Logo"
+														class="image left"/>
+														<h3>HTML and CSS</h3>
+														<p>Learnt in conjunction with Python since graduating</p>
+													</article>
+												</li>
+											</ul>
+
+										</section>
+									</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+
+					<div class="title">Contact</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Want to know more?</h2>
+							<p>
+								adamridsdale36@gmail.com
+							</p>
+						</header>
+
+						<div id="copyright">
+							<ul>
+								<li>&copy; Adam Ridsdale - 2025.</li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
