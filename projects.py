@@ -9,7 +9,13 @@ project_info = [
      "Title": "Morse Code Converter",
      "Info": "A simple text-to-code GUI utilising Tkinter",
      "Icon": "icon fa-file-code"
-     }
+     },
+
+    {"ID": "noughts-and-crosses",
+     "Title": "Noughts and Crosses",
+     "Info": "A terminal based noughts and crosses game against an AI opponent",
+     "Icon": "icon fa-file-code"
+     },
 
 ]
 
@@ -49,5 +55,28 @@ project_main = {
         "Image_2": "/static/images/portfolio_2.jpg",
         "Image_3": "",
     },
+
+    "noughts-and-crosses": {
+            "Heading": "Noughts and Crosses",
+            "Title": "A terminal based noughts and crosses game against an AI opponent",
+            "Subtitle": "",
+            "Body_1": "This game went through several iterations, trying to find the best way of tracking and "
+                      "managing the board. This included using numpy arrays and object oriented programming, "
+                      "before determining a simple list was sufficient. The game mechanics involve looping through "
+                      "lists of possible plays and combinations, and list comprehension to determine available "
+                      "moves and winning plays.",
+            "Body_2": "The AI was improved in the second iteration. The first involved a system that simply checked "
+                      "for winning combinations to either play or block, and made a random move in any other case. "
+                      "In the upgraded version this was swapped for a system where the AI would rank all possible "
+                      "squares based on the offensive and defensive advantages they gave, choosing the highest rank "
+                      "square to play (randomly if squares were tied). This also streamlined the code into a "
+                      "comprehensive nested loop",
+            "Link": "https://github.com/ARids36/Noughts_and_crosses",
+            "Stats": "Created using Python.\n"
+                     "Includes an AI opponent, list comprehension and exception handling",
+            "Image_1": "/static/images/noughts_and_crosses_2.png",
+            "Image_2": "/static/images/noughts_and_crosses_1.png",
+            "Image_3": "",
+        },
 
 }
