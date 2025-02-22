@@ -17,6 +17,12 @@ project_info = [
      "Icon": "icon fa-file-code"
      },
 
+    {"ID": "watermarker",
+     "Title": "Watermarker",
+     "Info": "A Tkinter based GUI to watermark images",
+     "Icon": "icon fa-file-code"
+     },
+
 ]
 
 project_main = {
@@ -76,6 +82,27 @@ project_main = {
                      "Includes an AI opponent, list comprehension and exception handling",
             "Image_1": "/static/images/noughts_and_crosses_2.png",
             "Image_2": "/static/images/noughts_and_crosses_1.png",
+            "Image_3": "",
+        },
+
+    "watermarker": {
+            "Heading": "Watermarker",
+            "Title": "A Tkinter based GUI that allows users to upload an image, add a watermark, and save this new "
+                     "image as a jpg file.",
+            "Subtitle": "",
+            "Body_1": "The GUI comprises a few basic buttons and boxes to allow users to upload an image, type a "
+                      "string to be added as a watermark and then add the watermark as either semi-transparent "
+                      "white text, or black text for lighter images. The function determines the appropriate font "
+                      "size to allow the whole of the text to fit the image, with a warning displayed if the "
+                      "string entered is excessively long.",
+            "Body_2": "I overlooked the save function in the first iteration, but this was rectified to add a "
+                      "button to the GUI after the image had been marked, allowing users to search through "
+                      "their directory and enter a filename before the image is saved.",
+            "Link": "https://github.com/ARids36/Watermarker",
+            "Stats": "Created using Python.\n"
+                     "Utilises Tkinter and Python Pillow",
+            "Image_1": "/static/images/watermark_1.png",
+            "Image_2": "/static/images/watermark_2.png",
             "Image_3": "",
         },
 
